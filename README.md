@@ -1,5 +1,5 @@
 # ffuf-sub-enum
-[![GitHub stars](https://img.shields.io/github/stars/Josekutty-K/ffuf-sub-enum)](https://github.com/Josekutty-K/ffuf-sub-enum)
+[![GitHub stars](https://img.shields.io/github/stars/Josekutty-K/ffuf_sub_enum_script)](https://github.com/Josekutty-K/ffuf_sub_enum_script)
 
 > Automated Subdomain Enumeration with ffuf using Jason Haddix's 2M subdomains wordlist
 
