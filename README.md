@@ -13,7 +13,8 @@ chmod +x ffuf_sub_enum.sh
 ```
 ## 🔧 Usage
 
-```./ffuf_sub_enum
+```
+./ffuf_sub_enum
 
 (*_*)
 Enter the domain or subdomain you want to fuzz: vulnweb.com
