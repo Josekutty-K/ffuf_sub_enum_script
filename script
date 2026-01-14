@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+echo ""
+echo "(*_*)"
+read -p 'Enter the domain or subdomain you want to fuzz: ' target
+echo "(*_*)"
+echo ""
+
+WORDLIST="$HOME/2m-subdomains.txt"
+OUTPUT="subs-${target}.json"
+
+if [ ! -f "$WORDLIST" ]; then
+        echo " Wordlist for fuzzing not found, downloading now..."
+        wget https://wordlists-cdn.assetnote.io/data/manual/2m-subdomains.txt -O "$WORDLIST"
+        if [ $? -eq 0 ]; then
+                echo "Wordlist downloaded (*_*)..."
+        else
+                echo "Download failed!... Exiting script"
+                exit 1
+        fi
+fi
+
+echo ""
+echo "Starting ffuf..."
+echo ""
+
+ffuf \
+        -u "http://FUZZ.$target" \
+        -w "$WORDLIST" \
+        -mc 200,302 \
+        -o "$OUTPUT"
+
+echo ""
+echo "Fuzzing finished, output saved to "$OUTPUT"
+echo ""
