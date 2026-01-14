@@ -5,7 +5,7 @@
 
 ## 📦 Installation
 ```bash
-git clone https://github.com/YOUR_USERNAME/ffuf-sub-enum.git
+git clone https://github.com/Josekutty-K/ffuf_sub_enum_script.git
 cd ffuf-sub-enum
 chmod +x ffuf_sub_enum.sh
 ./ffuf_sub_enum.sh
