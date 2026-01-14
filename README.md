@@ -36,7 +36,7 @@ ________________________________________________
 
  :: Method           : GET
  :: URL              : http://FUZZ.vulnweb.com
- :: Wordlist         : FUZZ: /home/josekutty/2m-subdomains.txt
+ :: Wordlist         : FUZZ: /home/my-machine/2m-subdomains.txt
  :: Output file      : subs-vulnweb.com.json
  :: File format      : json
  :: Follow redirects : false
